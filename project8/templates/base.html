@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+   <h1 class="bg-info">my site</h1>
+   <div class="btn-group btn-group-justified" id="y" style="background:white">
+        <a href="{% url 'home' %}" class="btn btn-primary">home</a>
+        {% if user.is_authenticated %}
+
+        <a href="{% url 'password_change' %}" class="btn btn-primary">change password</a>
+
+        <a href="{% url 'logout' %}" class="btn btn-primary">logout</a>
+        {% else %}
+        <a href="{% url 'signup1' %}" class="btn btn-primary">signup</a>
+        <a href="{% url 'login1' %}" class="btn btn-primary">login</a>
+        {% endif %}
+   </div>
+   {% block body_block %}
+
+   {% endblock %}
+</body>
+</html>
