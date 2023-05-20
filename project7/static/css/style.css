@@ -1,0 +1,56 @@
+.bg-info{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Darumadrop One', cursive;
+    background:linear-gradient(to bottom right,rgb(74, 74, 255), purple,pink,white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.btn-group{
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+}
+
+a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+}
+.a{
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    background:linear-gradient(rgb(74, 74, 255),violet,indigo,blue );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.b{
+    text-align: center;
+    text-transform: capitalize;
+    background:linear-gradient(to bottom right,violet,blue, indigo,pink );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.c{
+    text-align: center;
+    text-transform: uppercase;
+    color: violet;
+    letter-spacing: 4px;
+}
+.d{
+    text-transform:capitalize ;
+}
+.e{
+    text-transform: uppercase;
+    color: violet;
+}
+.f{
+    background-color: indigo;
+    color: white;
+    font-weight: bolder;
+}
