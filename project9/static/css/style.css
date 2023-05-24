@@ -1,0 +1,22 @@
+.b,a:link, a:visited {
+  background-color:violet;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.b,a:hover, a:active {
+  background-color:pink;
+}
+.c,.a{
+    text-align: center;
+    text-transform: capitalize;
+    background:linear-gradient(to bottom right,pink,purple);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.d{
+    font-size: 20px;
+    text-decoration:underline ;    
+}
